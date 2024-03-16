@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>GSAP Overlay Menu</title>
+  </head>
+  <body>
+    <h1 class="title">Full Screen Overlay Menu</h1>
+
+    <div id="toggle-btn" class="btn">
+      <div class="btn-outline btn-outline-1"></div>
+      <div class="btn-outline btn-outline-2"></div>
+      <div id="hamburger">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </div>
+    </div>
+
+    <div class="overlay">
+      <svg viewBox="0 0 1000 1000">
+        <path d="M0 2S175 1 500 1s500 1 500 1V0H0Z"></path>
+      </svg>
+    </div>
+
+    <div class="menu">
+      <div class="primary-menu">
+        <div class="menu-container">
+          <div class="wrapper">
+            <div class="menu-item">
+              <a href="#"><span>I</span>Index</a>
+              <div class="menu-item-revealer"></div>
+            </div>
+
+            <div class="menu-item">
+              <a href="#"><span>II</span>Work</a>
+              <div class="menu-item-revealer"></div>
+            </div>
+
+            <div class="menu-item">
+              <a href="#"><span>III</span>About</a>
+              <div class="menu-item-revealer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="secondary-menu">
+        <div class="menu-container">
+          <div class="wrapper">
+            <div class="menu-item">
+              <a href="#">Speaker</a>
+              <div class="menu-item-revealer"></div>
+            </div>
+
+            <div class="menu-item">
+              <a href="#">Blog</a>
+              <div class="menu-item-revealer"></div>
+            </div>
+
+            <div class="menu-item">
+              <a href="#">Contact</a>
+              <div class="menu-item-revealer"></div>
+            </div>
+
+            <div class="menu-item">
+              <a href="#">Credits</a>
+              <div class="menu-item-revealer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CSSRulePlugin.min.js"
+      integrity="sha512-zaTjCyJwbhpd8V594wpmUStv6Dy/SnmP7jR+XXnE49z2ayHkSirlNiP4XQc15Zgk+p5gXGe5ZUQYu4yRtShqkQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

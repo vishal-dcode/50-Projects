@@ -4,18 +4,13 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Arial";
   background-color: #141414;
   color: #fff;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 1rem;
 }
-
 .container {
-  background-color: rgb(91, 91, 91);
+  background-color: #2e2e2e;
   padding: 1.5rem;
   border-radius: 8px;
 }
@@ -27,7 +22,7 @@ body {
   color: lightgray;
 }
 .register-link:hover {
-  color: rgb(246, 246, 246);
+  color: #f6f6f6;
 }
 .form-control {
   position: relative;
@@ -49,10 +44,8 @@ body {
   left: 0;
   color: #dcdcdc !important;
 }
-
 .form-control label span {
   transform: translateY(15px);
-  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .btn {
   width: 100%;

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SVG Eye Tracking Animation</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <svg id="svg" viewBox="0 0 1000 1000">
+        <g id="left-eye">
+          <circle class="eye-outer" cx="400" cy="500" r="100" stroke="#141414" stroke-width="0" fill="#fff"></circle>
+          <circle class="eye-outer" cx="420" cy="500" r="50" fill="#141414"></circle>
+          <circle class="eye-outer" cx="465" cy="500" r="5" fill="#fff"></circle>
+        </g>
+        <g id="right-eye">
+          <circle class="eye-outer" cx="640" cy="500" r="100" stroke="#141414" stroke-width="0" fill="#fff"></circle>
+          <circle class="eye-outer" cx="660" cy="500" r="50" fill="#141414"></circle>
+          <circle class="eye-outer" cx="705" cy="500" r="5" fill="#fff"></circle>
+        </g>
+      </svg>
+    </div>
+
+    <div class="bg-title">
+      <span
+        >code made Hassle free Lively and <a href="https://www.instagram.com/flexcode.io/"><span>@</span>flexcode.io</a></span
+      >
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

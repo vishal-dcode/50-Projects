@@ -1,0 +1,171 @@
+@import "https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Playfair+Display&display=swap";
+:root {
+  --clr-bg: #e5e3dc;
+  --clr-overlay-bg: #141414;
+  --clr-link: #e5e3dc;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--clr-bg);
+  font-family: "Playfair Display", serif;
+  overflow: hidden;
+  user-select: none;
+}
+h1.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+svd path {
+  fill: var(--clr-overlay-bg);
+}
+#toggle-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em;
+  z-index: 2;
+}
+.btn-outline {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px solid var(--clr-overlay-bg);
+}
+.btn-outline-1 {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morph 4s linear infinite;
+}
+.btn-outline-2 {
+  border-radius: 53% 47% 43% 58% / 51% 39% 61% 49%;
+}
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+#hamburger {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hamburger .line-1 {
+  position: relative;
+  width: 20px;
+  transform: translate(14px, -2.5px);
+  height: 1.25px;
+  background: var(--clr-overlay-bg);
+  transition: transform 0.25s;
+}
+#hamburger .line-2 {
+  position: relative;
+  width: 24px;
+  height: 1.25px;
+  right: 0;
+  transform: translate(-6px, 2.5px);
+  background: var(--clr-overlay-bg);
+  transition: transform 0.25s;
+}
+#hamburger.active .line-1 {
+  left: 12px;
+  width: 24px;
+  transform: rotate(45deg);
+}
+#hamburger.active .line-2 {
+  right: 12px;
+  transform: rotate(-45deg);
+}
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  margin-inline: 2rem;
+}
+.menu > div {
+  height: 100%;
+  display: flex;
+}
+.menu a {
+  position: relative;
+  top: 100vh;
+  line-height: 50%;
+  text-decoration: none;
+  color: var(--clr-link);
+}
+.menu a span {
+  font-size: 20px;
+  margin-right: 2em;
+}
+.menu-item {
+  position: relative;
+}
+.meu-container {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.primary-menu {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.primary-menu .menu-container .wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.primary-menu a {
+  text-transform: uppercase;
+  font-size: 125px;
+  font-weight: 500px;
+}
+.secondary-menu {
+  position: relative;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8em;
+  flex-direction: column;
+}
+.secondary-menu .menu-item a {
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 36px;
+}
+.secondary-menu .menu-container .wrapper:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

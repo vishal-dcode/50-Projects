@@ -1,12 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap";
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 body {
+  font-family: "Poppins", sans-serif;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -24,7 +21,7 @@ body {
   gap: 0.5rem;
 }
 .accordion .accordion-content {
-  margin: 0px 0;
+  margin: 0;
   border-radius: 4px;
   background: #fff7f0;
   border: 1px solid #ffd6b3;
@@ -32,7 +29,7 @@ body {
 }
 .accordion-content:nth-child(2) {
   background-color: #f0faff;
-  border-color: #cceeff;
+  border-color: #cef;
 }
 .accordion-content:nth-child(3) {
   background-color: #fff0f3;
@@ -40,7 +37,7 @@ body {
 }
 .accordion-content:nth-child(4) {
   background-color: #f0f0ff;
-  border-color: #ccccff;
+  border-color: #ccf;
 }
 .accordion-content.open {
   padding-bottom: 10px;
@@ -54,7 +51,6 @@ body {
   justify-content: space-between;
   transition: all 0.2s linear;
 }
-
 .accordion-content header .title {
   font-size: 14px;
   font-weight: 500;

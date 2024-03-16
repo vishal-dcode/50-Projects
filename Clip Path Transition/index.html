@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair:wght@300;400;500;600;700&family=Poppins:wght@200;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Clip-Path Transitions</title>
+    <style>
+      body {
+        background: #22223b;
+        margin: 0;
+        height: 100vh;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        font-family: "poppins", "sans-serif";
+        padding: 2rem;
+        overflow: hidden;
+      }
+      .inner {
+        background: #f2e9e4;
+        padding: 1em;
+        border-radius: 0.5rem;
+        width: 350px;
+        clip-path: circle(6% at 92.5% 14%);
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+      }
+      .inner:hover {
+        clip-path: circle(75%);
+        background: #4a4e69;
+      }
+      .inner h1 {
+        color: white;
+        margin: 0;
+      }
+      .inner p {
+        color: white;
+        font-size: 0.8rem;
+        text-align: justify;
+      }
+      .inner span {
+        font-family: "Playfair", serif;
+        float: right;
+        right: 9px;
+        top: -2px;
+        color: #22223b;
+        font-weight: 700;
+        font-size: 1.5rem;
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+        position: relative;
+      }
+      .inner:hover span {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner">
+        <span>i</span>
+        <h1>Hello World</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reiciendis
+          nihil consequatur dolorem quod, libero provident porro, qui magni
+          nesciunt fugit quisquam, quaerat mollitia obcaecati nostrum similique
+          at quia? Facere?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

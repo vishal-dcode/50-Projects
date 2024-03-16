@@ -2,7 +2,6 @@ body {
   margin: 0;
   overflow: hidden;
 }
-
 canvas {
   display: block;
   background-color: #002f00;

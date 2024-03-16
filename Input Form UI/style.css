@@ -1,42 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap");
-
+@import "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap";
 :root {
   --clr-p: hsl(79, 100%, 49%);
   --clr-w: #fff;
   --clr-b: #000;
-
   --ff: "Space Grotesk", sans-serif;
-
   --fw-400: 400;
   --fw-600: 600;
-
   --fs-1: 0.938rem;
   --fs-2: 0.563rem;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-weight: var(--fw-400);
   background: var(--clr-w);
 }
-
 .form {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .form_content {
   display: grid;
   gap: 1rem;
 }
-
 .form_input,
 .form_label,
 .form_submit {
@@ -46,20 +37,17 @@ body {
   font-weight: var(--fw-600);
   font-size: var(--fs-1);
 }
-
 .form_box {
   width: 312px;
   height: 59px;
   position: relative;
 }
-
 .form_shadow {
   position: absolute;
   width: 100%;
   height: 100%;
   background: var(--clr-b);
 }
-
 .form_input {
   position: absolute;
   border: 2.5px solid var(--clr-b);
@@ -70,11 +58,9 @@ body {
   padding: 18px;
   transition: transform 0.3s ease;
 }
-
 .form_input::placeholder {
   transition: opacity 0.5s;
 }
-
 .form_label {
   z-index: 2;
   position: absolute;
@@ -86,12 +72,10 @@ body {
   pointer-events: none;
   opacity: 0;
 }
-
 .form_button {
   justify-self: flex-end;
   background: var(--clr-b);
 }
-
 .form_submit {
   padding: 0.875rem 1.5rem;
   color: var(--clr-b);
@@ -99,23 +83,19 @@ body {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-
 .form_submit:hover {
   transform: translate(-6px, -6px);
 }
-
 .form_input:focus::placeholder {
   opacity: 0;
   transition: 0.3s;
 }
-
 .form_input:focus,
 .form_input:not(:placeholder-shown).form_input:not(:focus) {
   transform: translate(-6px, -8px);
-  padding: 24px 16px 12px 16px;
+  padding: 24px 16px 12px;
   animation: bouncy 0.3s;
 }
-
 .form_input:focus + .form_label,
 .form_input:not(:placeholder-shown).form_input:not(:focus) + .form_label {
   opacity: 1;
@@ -124,7 +104,6 @@ body {
   font-size: 10px;
   transition: 0.3s ease;
 }
-
 @keyframes bouncy {
   0% {
     transform: translate(0);
@@ -136,13 +115,11 @@ body {
     transform: translate(-6px, -8px);
   }
 }
-
 @media screen and (max-width: 550px) {
   .form_submit {
     width: 321px;
   }
 }
-
 @media screen and (min-width: 968px) {
   .form_content {
     zoom: 1.1;

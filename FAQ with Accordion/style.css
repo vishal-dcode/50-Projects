@@ -2,16 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 body {
+  font-family: "Poppins";
   background-color: #fde2f3;
   color: #2a2f4f;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 .header {
   margin: 5rem 0 2rem;
@@ -33,7 +32,7 @@ body {
 .faq-text {
   max-width: 450px;
   margin-block-start: 10px;
-  display: none; /*info Display block when .faq-crt is active*/
+  display: none;
 }
 .faq-crt.active .faq-text {
   display: block;

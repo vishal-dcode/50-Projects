@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap";
 * {
   margin: 0;
   padding: 0;
@@ -13,24 +12,25 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .modal {
   width: fit-content;
   height: fit-content;
-  background: #ffffff;
-  box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  box-shadow: 0 187px 75px rgba(0, 0, 0, 0.01), 0 105px 63px rgba(0, 0, 0, 0.05),
+    0 47px 47px rgba(0, 0, 0, 0.09), 0 12px 26px rgba(0, 0, 0, 0.1),
+    0 0 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 187px 75px rgba(0, 0, 0, 0.01),
+    0 105px 63px rgba(0, 0, 0, 0.05), 0 47px 47px rgba(0, 0, 0, 0.09),
+    0 12px 26px rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1);
   border-radius: 26px;
   max-width: 450px;
 }
-
 .form {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
 }
-
 .payment--options {
   width: calc(100% - 40px);
   display: grid;
@@ -38,7 +38,6 @@ body {
   gap: 20px;
   padding: 10px;
 }
-
 .payment--options button {
   height: 55px;
   background: #f2f2f2;
@@ -47,15 +46,12 @@ body {
   border: 0;
   outline: none;
 }
-
 .payment--options button svg {
   height: 18px;
 }
-
 .payment--options button:last-child svg {
   height: 22px;
 }
-
 .separator {
   width: calc(100% - 20px);
   display: grid;
@@ -64,7 +60,6 @@ body {
   color: #8b8e98;
   margin: 0 10px;
 }
-
 .separator > p {
   word-break: keep-all;
   display: block;
@@ -73,7 +68,6 @@ body {
   font-size: 11px;
   margin: auto;
 }
-
 .separator .line {
   display: inline-block;
   width: 100%;
@@ -82,13 +76,11 @@ body {
   background-color: #e8e8e8;
   margin: auto;
 }
-
 .credit-card-info--form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-
 .input_container {
   width: 100%;
   height: fit-content;
@@ -96,23 +88,19 @@ body {
   flex-direction: column;
   gap: 5px;
 }
-
 .split {
   display: grid;
   grid-template-columns: 4fr 2fr;
   gap: 15px;
 }
-
 .split input {
   width: 100%;
 }
-
 .input_label {
   font-size: 10px;
   color: #8b8e98;
   font-weight: 600;
 }
-
 .input_field {
   width: auto;
   height: 40px;
@@ -123,13 +111,11 @@ body {
   border: 1px solid #e5e5e500;
   transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
 }
-
 .input_field:focus {
   border: 1px solid transparent;
-  box-shadow: 0px 0px 0px 2px #242424;
+  box-shadow: 0 0 0 2px #242424;
   background-color: transparent;
 }
-
 .purchase--btn {
   height: 55px;
   text-transform: uppercase;
@@ -138,24 +124,20 @@ body {
   border-radius: 11px;
   border: 0;
   outline: none;
-  color: #ffffff;
+  color: #fff;
   font-size: 13px;
   font-weight: 700;
   background: #537fe7;
   transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
 }
-
 .purchase--btn:hover {
-  box-shadow: 0px 0px 0px 2px #ffffff, 0px 0px 0px 4px #0000003a;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #0000003a;
 }
-
-/* Reset input number styles */
 .input_field::-webkit-outer-spin-button,
 .input_field::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 .input_field[type="number"] {
   -moz-appearance: textfield;
 }

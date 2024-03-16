@@ -1,8 +1,6 @@
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Poppins";
 }
 body {
   background-color: #121212;
@@ -13,8 +11,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-/* 1 btn from JS */
 .btn {
   cursor: pointer;
   background-color: #515cf1;

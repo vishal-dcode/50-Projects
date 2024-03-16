@@ -1,17 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
-  font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: #141414;
-  color: #fff;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   overflow-x: hidden;
 }
 .container {
@@ -20,7 +11,7 @@ body {
 .l-container {
   position: relative;
   flex: 1;
-  background-color: rgb(255, 212, 184);
+  background-color: #ffd4b8;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -41,7 +32,7 @@ body {
 .r-container {
   position: relative;
   flex: 1;
-  background-color: rgb(207, 255, 208);
+  background-color: #cfffd0;
   width: 100vw;
   overflow: hidden;
   transition: flex 0.5s ease-in-out;

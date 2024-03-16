@@ -4,25 +4,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
 }
 body {
-  background: url(https://i.pinimg.com/originals/a4/c4/ba/a4c4baa76334a8b74adfe6dce74f13d8.jpg) no-repeat center;
+  background: url(https://i.pinimg.com/originals/a4/c4/ba/a4c4baa76334a8b74adfe6dce74f13d8.jpg)
+    no-repeat center;
   background-size: cover;
   color: #fff;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 1rem;
 }
 body::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   opacity: 0.8;
   z-index: -1;
   background-color: #000000;

@@ -11,7 +11,6 @@ body {
   justify-content: center;
   height: 100vh;
 }
-
 .loading {
   display: flex;
   align-items: center;
@@ -19,7 +18,6 @@ body {
   height: 100%;
   width: 100%;
 }
-
 .dot {
   height: 20px;
   width: 20px;
@@ -28,46 +26,35 @@ body {
   background-color: #b3d4fc;
   animation: pulse 1.5s infinite ease-in-out;
 }
-
 .dot:last-child {
   margin-right: 0;
 }
-
 .dot:nth-child(1) {
   animation-delay: -0.3s;
 }
-
 .dot:nth-child(2) {
   animation-delay: -0.1s;
 }
-
 .dot:nth-child(3) {
   animation-delay: 0.1s;
 }
-
 @keyframes pulse {
   0% {
     transform: scale(0.8);
     background-color: #b3d4fc;
     box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
   }
-
   50% {
     transform: scale(1.2);
     background-color: #6793fb;
     box-shadow: 0 0 0 10px rgba(178, 212, 252, 0);
   }
-
   100% {
     transform: scale(0.8);
     background-color: #b3d4fc;
     box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
   }
 }
-
-/* =========================
-          Watermark
-========================= */
 .watermark-ctr {
   position: fixed;
   bottom: 1.5rem;
@@ -93,7 +80,7 @@ body {
   padding: 14px 24px 14px 20px;
   border-radius: 29px;
   margin: 0;
-  background-color: #222222;
+  background-color: #222;
   color: #fff;
   display: flex;
   align-items: center;
@@ -103,8 +90,11 @@ body {
   -webkit-tap-highlight-color: transparent;
   z-index: 1;
   transform: scale(var(--generate-button-scale, 1)) translateZ(0);
-  box-shadow: 0px 0px 120px var(--generate-button-shadow-wide, transparent), 0px 4px 12px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.1),
-    inset 0px 1px 1px var(--generate-button-shadow-inset, rgba(255, 255, 255, 0.04)), 0 0 0 var(--generate-button-shadow-outline, 0px) rgba(109, 68, 244, 0.4);
+  box-shadow: 0 0 120px var(--generate-button-shadow-wide, transparent),
+    0 4px 12px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1),
+    inset 0 1px 1px
+      var(--generate-button-shadow-inset, rgba(255, 255, 255, 0.04)),
+    0 0 0 var(--generate-button-shadow-outline, 0px) rgba(109, 68, 244, 0.4);
   transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s, color 0.3s;
 }
 .generate-button:before {
@@ -115,7 +105,7 @@ body {
   height: 20px;
   left: 20%;
   bottom: -10px;
-  background: rgb(168, 109, 255);
+  background: #a86dff;
   filter: blur(12.5px);
   z-index: 2;
   clip-path: inset(-200% -30% 10px -30% round 29px);

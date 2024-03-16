@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "poppins", sans-serif;
 }
 body {
   background-color: #000;
@@ -51,6 +50,7 @@ img {
   object-fit: cover;
 }
 .btn {
+  font-family: "poppins", sans-serif;
   cursor: pointer;
   width: 10em;
   height: 5rem;

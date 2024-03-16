@@ -1,12 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap";
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 body {
+  font-family: "Poppins";
   background-color: #141414;
   color: #fff;
   display: flex;
@@ -26,42 +24,39 @@ body {
   align-items: center;
   gap: 2rem;
 }
-
 .content_ctr--left img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
-
 .content_ctr--right h1 {
-  color: rgb(136, 123, 255);
+  color: #887bff;
   font-size: 2.5rem;
 }
 .content_ctr--right p {
-  color: rgb(170, 170, 170);
+  color: #aaa;
   margin-block: 1rem 2rem;
   max-width: 460px;
 }
 .content_ctr--right button {
   padding: 10px 20px;
   border: none;
-  background-color: rgb(136, 123, 255);
-  color: rgb(255, 255, 255);
+  background-color: #887bff;
+  color: #fff;
   outline: transparent;
   border-radius: 4px;
 }
 .container.show-nav {
   transform: rotate(-20deg);
 }
-
 .circle-container {
   position: fixed;
   top: -100px;
   left: -100px;
 }
 .circle {
-  background-color: rgb(10, 0, 104);
+  background-color: #0a0068;
   height: 200px;
   aspect-ratio: 1;
   border-radius: 100vw;
@@ -76,7 +71,7 @@ body {
   left: 60%;
   height: 100px;
   background: transparent;
-  color: white;
+  color: #fff;
   border: none;
   font-size: 1.5rem;
 }
@@ -88,20 +83,17 @@ body {
   transform: rotate(90deg);
   transform-origin: top left;
 }
-
 nav {
   position: fixed;
   bottom: 40px;
   left: 0;
   z-index: 100;
 }
-
 nav ul {
   list-style-type: none;
   padding-left: 80px;
   transform: translateX(-99px) rotate(20deg);
 }
-
 nav ul li {
   text-transform: uppercase;
   color: #fff;
@@ -109,19 +101,16 @@ nav ul li {
   transform: translateX(-100%);
   transition: transform 0.4s ease-in;
 }
-
 nav ul li i {
   font-size: 14px;
   margin-right: 10px;
 }
-
 nav a {
   color: #fafafa;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
 }
-
 nav li:hover,
 nav li:hover a {
-  color: rgb(81, 61, 255);
+  color: #513dff;
 }

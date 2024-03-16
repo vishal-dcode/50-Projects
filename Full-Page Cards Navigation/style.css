@@ -1,25 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap";
 *,
-*::after,
-*::before {
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Poppins", sans-serif;
   background-color: #0d1821;
   color: #fff;
   overflow-x: hidden;
 }
-
 html,
 body {
   height: 100%;
 }
-
 a {
   color: #315659;
   text-decoration: none;
@@ -33,26 +29,21 @@ button {
   outline: none;
   cursor: pointer;
 }
-
-/* --------------------------------- Header --------------------------------- */
 .cd-logo,
 .cd-nav-trigger {
   position: absolute;
   z-index: 3;
 }
-
 .cd-logo {
   top: 34px;
   left: 5%;
   font-size: 1.5rem;
   font-weight: 900;
 }
-
 .cd-logo.project-open {
   opacity: 0;
   visibility: hidden;
 }
-
 .cd-nav-trigger {
   top: 24px;
   right: 5%;
@@ -72,7 +63,7 @@ button {
 .cd-nav-trigger .cd-icon::before,
 .cd-nav-trigger .cd-icon::after {
   position: absolute;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 2px;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -132,7 +123,7 @@ button {
 }
 .cd-nav-trigger.project-open .cd-icon::before,
 .cd-nav-trigger.project-open .cd-icon::after {
-  background-color: white;
+  background-color: #fff;
 }
 .cd-nav-trigger.project-open .cd-icon::before {
   -webkit-transform: translateY(0) rotate(45deg);
@@ -149,7 +140,6 @@ button {
   transform: translateY(0) rotate(-45deg);
 }
 .cd-nav-trigger.nav-open .cd-icon {
-  /* user opens the navigation - transform the icon into an arrow */
   -webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
   -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
   -ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
@@ -164,14 +154,13 @@ button {
   transform: translateX(-5px) translateY(3px) rotate(45deg) scaleX(0.5);
 }
 .cd-nav-trigger.nav-open .cd-icon::before {
-  -webkit-transform: translateX(-5px) translateY(-3px) rotate(-45deg) scaleX(0.5);
+  -webkit-transform: translateX(-5px) translateY(-3px) rotate(-45deg)
+    scaleX(0.5);
   -moz-transform: translateX(-5px) translateY(-3px) rotate(-45deg) scaleX(0.5);
   -ms-transform: translateX(-5px) translateY(-3px) rotate(-45deg) scaleX(0.5);
   -o-transform: translateX(-5px) translateY(-3px) rotate(-45deg) scaleX(0.5);
   transform: translateX(-5px) translateY(-3px) rotate(-45deg) scaleX(0.5);
 }
-
-/* ------------------------------- Navigation ------------------------------- */
 .cd-primary-nav {
   position: absolute;
   z-index: 1;
@@ -182,9 +171,9 @@ button {
   overflow: auto;
   text-align: center;
   opacity: 0;
-  -webkit-transition: opacity 0s 0.4s;
-  -moz-transition: opacity 0s 0.4s;
-  transition: opacity 0s 0.4s;
+  -webkit-transition: opacity 0 0.4s;
+  -moz-transition: opacity 0 0.4s;
+  transition: opacity 0 0.4s;
   display: table;
 }
 .cd-primary-nav ul {
@@ -205,13 +194,12 @@ button {
   -webkit-transition: background 0.2s;
   -moz-transition: background 0.2s;
   transition: background 0.2s;
-  color: #ffffff;
+  color: #fff;
   font-size: 3rem;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .cd-primary-nav .cd-label {
   position: relative;
   margin: 2.4em 0 2em;
@@ -238,9 +226,9 @@ button {
 }
 .cd-primary-nav.nav-open {
   opacity: 1;
-  -webkit-transition: opacity 0s;
-  -moz-transition: opacity 0s;
-  transition: opacity 0s;
+  -webkit-transition: opacity 0;
+  -moz-transition: opacity 0;
+  transition: opacity 0;
 }
 .cd-primary-nav.nav-open ul {
   -webkit-transform: translateY(0);
@@ -249,8 +237,6 @@ button {
   -o-transform: translateY(0);
   transform: translateY(0);
 }
-
-/* -------------------------------- Projects -------------------------------- */
 .cd-projects-container {
   height: 100%;
   width: 100vw;
@@ -260,8 +246,8 @@ button {
 .cd-projects-container .single-project {
   position: absolute;
   z-index: 2;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   cursor: pointer;
@@ -283,7 +269,6 @@ button {
   -o-transform: translateY(50%);
   transform: translateY(50%);
 }
-
 .cd-projects-container .single-project.selected {
   cursor: auto;
   -webkit-transform: translateY(0);
@@ -314,7 +299,6 @@ button {
   -o-transform: translateY(96%);
   transform: translateY(96%);
 }
-
 .cd-projects-container.nav-open:hover .single-project {
   -webkit-transform: translateY(88%);
   -moz-transform: translateY(88%);
@@ -336,7 +320,6 @@ button {
   -o-transform: translateY(96%);
   transform: translateY(96%);
 }
-
 .cd-title {
   position: relative;
   z-index: 1;
@@ -367,7 +350,7 @@ button {
   transform: translateX(-50%) translateY(-50%) scaleX(0);
   height: 1px;
   width: 60px;
-  background-color: #ffffff;
+  background-color: #fff;
   -webkit-transition: -webkit-transform 0.2s;
   -moz-transition: -moz-transform 0.2s;
   transition: transform 0.2s;
@@ -375,17 +358,15 @@ button {
 .single-project:nth-of-type(1) .cd-title {
   background-color: #1a3c40;
 }
-
 .single-project:nth-of-type(2) .cd-title {
   background-color: #1d5c63;
 }
-
 .cd-title h2 {
   position: relative;
   z-index: 1;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
   display: table-cell;
   vertical-align: middle;
   -webkit-transition: -webkit-transform 0.4s;
@@ -407,9 +388,9 @@ button {
   transform: translateX(-50%) translateY(-50%) scaleX(1);
 }
 .no-touch .selected .cd-title:hover::after {
-  -webkit-transition: -webkit-transform 0s;
-  -moz-transition: -moz-transform 0s;
-  transition: transform 0s;
+  -webkit-transition: -webkit-transform 0;
+  -moz-transition: -moz-transform 0;
+  transition: transform 0;
   -webkit-transform: translateX(-50%) translateY(-50%) scaleX(0);
   -moz-transform: translateX(-50%) translateY(-50%) scaleX(0);
   -ms-transform: translateX(-50%) translateY(-50%) scaleX(0);
@@ -423,7 +404,6 @@ button {
   -o-transform: translateY(100%);
   transform: translateY(100%);
 }
-
 .cd-project-info {
   position: absolute;
   z-index: 2;
@@ -449,7 +429,7 @@ button {
   position: relative;
   z-index: 2;
   padding: 2em 0 3em;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .cd-project-info .content-wrapper > * {
   width: 90%;
@@ -465,14 +445,13 @@ button {
   -webkit-overflow-scrolling: touch;
   opacity: 1;
   visibility: visible;
-  -webkit-transition: opacity 0s, visibility 0s;
-  -moz-transition: opacity 0s, visibility 0s;
-  transition: opacity 0s, visibility 0s;
+  -webkit-transition: opacity 0s, visibility 0;
+  -moz-transition: opacity 0s, visibility 0;
+  transition: opacity 0s, visibility 0;
 }
 .cd-project-info.has-boxshadow .content-wrapper {
   box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.2);
 }
-
 .cd-scroll {
   position: fixed;
   z-index: 1;
@@ -510,7 +489,6 @@ button {
   opacity: 0;
   visibility: hidden;
 }
-
 @-webkit-keyframes cd-translate {
   0% {
     -webkit-transform: translateX(-50%);
@@ -556,12 +534,10 @@ button {
     transform: translateX(-50%);
   }
 }
-
 .no-js .cd-nav-trigger,
 .no-js .cd-scroll {
   display: none;
 }
-
 .no-js .cd-primary-nav {
   position: relative;
   height: auto;
@@ -596,7 +572,6 @@ button {
 .no-js .cd-primary-nav li.cd-label {
   display: none;
 }
-
 .no-js .cd-projects-container {
   height: auto;
 }
@@ -626,7 +601,6 @@ button {
 .no-js .cd-projects-container h2::after {
   display: none;
 }
-
 .no-js .cd-project-info {
   position: relative;
   height: auto;

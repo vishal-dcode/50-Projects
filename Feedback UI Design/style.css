@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 body {
+  font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
   background-color: #141414;
   color: #fff;
   height: 100vh;
@@ -15,11 +15,10 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .ctr {
   width: 400px;
   background-color: #474747;
-  padding: 2rem 2rem;
+  padding: 2rem;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -29,7 +28,7 @@ body {
 }
 .ctr .title {
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: capitalize;
 }
 .face-wrapper {
@@ -65,19 +64,16 @@ body {
   outline: transparent;
   font-weight: 600;
 }
-
 .ctr .fa-heart {
   font-size: 2rem;
-  color: rgb(255, 31, 31);
+  color: #ff1f1f;
 }
-
 #feedback-ctr * + * {
   margin-top: 0.5rem;
 }
 #feedback-ctr .message {
   font-size: 0.9rem;
 }
-
 .hidden {
   display: none;
 }

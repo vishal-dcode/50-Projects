@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
 }
 body {
   background-color: #141414;
@@ -13,13 +14,12 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .btn {
   background-color: #fff;
   padding: 10px 20px;
   border-radius: 4px;
   border: none;
-  font-weight: bold;
+  font-weight: 700;
 }
 .btn:active {
   transform: scale(0.98);
@@ -34,25 +34,25 @@ body {
 }
 .toast {
   position: relative;
-  background-color: #666666;
+  background-color: #666;
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
   margin: 0.5rem;
   overflow: hidden;
 }
 .toast::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgb(178, 157, 255);
+  background-color: #b29dff;
   height: 2px;
   width: 100%;
   animation: notification 4s linear;
 }
 @keyframes notification {
   to {
-    width: 0%;
+    width: 0;
   }
 }

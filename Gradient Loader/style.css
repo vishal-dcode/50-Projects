@@ -18,35 +18,45 @@ body {
   height: 96px;
   width: 96px;
   animation: rotate_3922 1.2s linear infinite;
-  background-color: #ff5500;
-  background-image: linear-gradient(#6359f8, #9c32e2, #f36896, #ff0b0b, #ff5500, #ff9500, #ffb700);
+  background-color: #f50;
+  background-image: linear-gradient(
+    #6359f8,
+    #9c32e2,
+    #f36896,
+    #ff0b0b,
+    #f50,
+    #ff9500,
+    #ffb700
+  );
 }
-
 .container span {
   position: absolute;
   border-radius: 50%;
   height: 100%;
   width: 100%;
-  background-color: #ff5500;
-  background-image: linear-gradient(#6359f8, #9c32e2, #f36896, #ff0b0b, #ff5500, #ff9500, #ffb700);
+  background-color: #f50;
+  background-image: linear-gradient(
+    #6359f8,
+    #9c32e2,
+    #f36896,
+    #ff0b0b,
+    #f50,
+    #ff9500,
+    #ffb700
+  );
 }
-
 .container span:nth-of-type(1) {
   filter: blur(5px);
 }
-
 .container span:nth-of-type(2) {
   filter: blur(10px);
 }
-
 .container span:nth-of-type(3) {
   filter: blur(25px);
 }
-
 .container span:nth-of-type(4) {
   filter: blur(50px);
 }
-
 .container::after {
   content: "";
   position: absolute;
@@ -57,12 +67,10 @@ body {
   background-color: #000;
   border-radius: 50%;
 }
-
 @keyframes rotate_3922 {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
   }
-
   to {
     transform: translate(-50%, -50%) rotate(360deg);
   }

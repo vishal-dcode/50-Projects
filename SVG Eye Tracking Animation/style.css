@@ -1,0 +1,59 @@
+@import "https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #ee6055;
+  font-family: "Big Shoulders Text", sans-serif;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#svg {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  height: 100vh !important;
+  user-select: none;
+}
+.bg-title {
+  max-width: 1200px;
+  min-width: 480px;
+  line-height: 0.9;
+  font-size: clamp(6rem, -0.9718rem + 20.2817vw, 15rem);
+  font-weight: 900;
+  text-align: justify;
+  text-transform: uppercase;
+  color: #3c1642;
+  cursor: context-menu;
+}
+.bg-title a {
+  color: #3c1642;
+  text-decoration: none;
+  isolation: isolate !important;
+  cursor: pointer;
+  z-index: 10;
+}
+.bg-title a:hover {
+  color: #3a0ca3;
+}
+.bg-title span span {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+@media (max-width: 600px) {
+  #svg {
+    top: 70% !important;
+    transform: translate(-52%, -50%);
+  }
+  .bg-title {
+    transform: translateY(-10rem);
+  }
+}
